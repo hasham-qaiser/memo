@@ -3,14 +3,16 @@ import React from "react";
 import axios from "axios";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { DialogDescription, DialogTrigger } from "@radix-ui/react-dialog";
-import { Plus } from "lucide-react";
+import { Loader2, Plus } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { useMutation } from "@tanstack/react-query";
+import { useRouter } from "next/navigation";
 
 type Props = {};
 
 const CreateNoteDialog = (props: Props) => {
+  const router = useRouter();
   const [input, setInput] = React.useState("");
   const createNotebook = useMutation({
     mutationFn: async () => {
@@ -30,9 +32,11 @@ const CreateNoteDialog = (props: Props) => {
     createNotebook.mutate(undefined, {
       onSuccess: ({ note_id }) => {
         console.log("created new note:", { note_id });
+        router.push(`/notebook/${note_id}`);
       },
       onError: (error) => {
         console.error(error);
+        window.alert("Error creating notebook");
       },
     });
   };
@@ -60,7 +64,14 @@ const CreateNoteDialog = (props: Props) => {
           />
           <div className="h-4"></div>
           <div className="flex items-center gap-2">
-            <Button type="submit" className="bg-green-600">
+            <Button
+              type="submit"
+              className="bg-green-600"
+              disabled={createNotebook.isPending}
+            >
+              {createNotebook.isPending && (
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+              )}
               Create
             </Button>
             <Button type="reset" variant={"secondary"}>
