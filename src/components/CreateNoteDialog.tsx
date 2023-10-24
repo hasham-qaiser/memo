@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
+import axios from "axios";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { DialogDescription, DialogTrigger } from "@radix-ui/react-dialog";
 import { Plus } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { useMutation } from "@tanstack/react-query";
-import axios from "axios";
 
 type Props = {};
 
@@ -28,8 +28,8 @@ const CreateNoteDialog = (props: Props) => {
       return;
     }
     createNotebook.mutate(undefined, {
-      onSuccess: () => {
-        console.log("Your note has been created");
+      onSuccess: ({ note_id }) => {
+        console.log("created new note:", { note_id });
       },
       onError: (error) => {
         console.error(error);

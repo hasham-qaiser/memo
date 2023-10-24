@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { UserButton } from "@clerk/nextjs";
+import { $notes } from "@/lib/db/schema";
 import { Separator } from "@/components/ui/separator";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
