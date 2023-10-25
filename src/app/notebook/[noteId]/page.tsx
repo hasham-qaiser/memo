@@ -45,6 +45,11 @@ const NotebookPage = async ({ params: { noteId } }: Props) => {
           <span className="text-stone-500 font-semibold ">{note.name}</span>
           <div className="ml-auto">DELETE BUTTON</div>
         </div>
+
+        <div className="h-4"></div>
+        <div className="border-stone-200 shadow-xl border rounded-lg px-16 py-8 w-full">
+          {/* Editor */}
+        </div>
       </div>
     </div>
   );
