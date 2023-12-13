@@ -53,9 +53,9 @@ const CreateNoteDialog = (props: Props) => {
   return (
     <Dialog>
       <DialogTrigger>
-        <div className="border-dashed border-2 flex border-green-600 h-full rounded-lg items-center justify-center sm:flex-col hover:shadow-xl transition hover:-translate-y-1 flex-row p-4 ">
-          <Plus className="w-6 h-6 text-green-600" strokeWidth={3} />
-          <h2 className="font-bold text-green-600 sm:mt-2">New Note Book</h2>
+        <div className="border-dashed border-2 flex border-blue-500 h-full rounded-lg items-center justify-center sm:flex-col hover:shadow-xl transition hover:-translate-y-1 flex-row p-4 ">
+          <Plus className="w-6 h-6 text-blue-500" strokeWidth={3} />
+          <h2 className="font-bold text-blue-500 sm:mt-2">New Note Book</h2>
         </div>
       </DialogTrigger>
       <DialogContent>
@@ -75,7 +75,7 @@ const CreateNoteDialog = (props: Props) => {
           <div className="flex items-center gap-2">
             <Button
               type="submit"
-              className="bg-green-600"
+              className="bg-blue-500"
               disabled={createNotebook.isPending}
             >
               {createNotebook.isPending && (
