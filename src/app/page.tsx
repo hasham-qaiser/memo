@@ -11,12 +11,12 @@ export default function Home() {
           <span className="text-blue-500 font-bold">Potion.</span>{" "}
         </h1>
         <br></br>
-        <br></br>
+
         <h1 className="font-semibold text-7xl text-center">
           Your AI <span className="text-blue-500 font-bold">note taking</span>{" "}
           assistant.
         </h1>
-        <div className="mt-4"></div>
+        <div className="mt-6"></div>
         <h2 className="font-semibold text-3xl text-center text-slate-700">
           <TypewriterTitle />
         </h2>
