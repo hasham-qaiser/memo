@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["firebasestorage.googleapis.com"],
+    domains: [
+      "oaidalleapiprodscus.blob.core.windows.net",
+      "firebasestorage.googleapis.com",
+    ],
   },
   typescript: {
     ignoreBuildErrors: true,
