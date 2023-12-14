@@ -24,9 +24,9 @@
 
 ## Getting Started
 
-To get started with Potion, follow these steps:
+To get started with Memo, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/hasham-qaiser/potion.git`
+1. Clone the repository: `git clone https://github.com/hasham-qaiser/memo.git`
 2. Install dependencies: `npm install`
 3. Configure environment variables (if required).
 4. Run the development server: `npm run dev`
