@@ -8,7 +8,7 @@ export default function Home() {
     <div className="bg-gradient-to-r min-h-screen grainy from-rose-100 to-teal-100">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <h1 className="font-semibold text-7xl text-center">
-          <span className="text-blue-500 font-bold">Potion.</span>{" "}
+          <span className="text-blue-500 font-bold">Memo.</span>{" "}
         </h1>
         <br></br>
 

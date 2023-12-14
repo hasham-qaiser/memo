@@ -7,7 +7,7 @@ import Provider from "@/components/Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Potion",
+  title: "Memo",
 };
 
 export default function RootLayout({
