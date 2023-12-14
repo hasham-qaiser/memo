@@ -1,18 +1,26 @@
 # About
 
-Welcome to Potion, a cutting-edge web application that combines the power of NextJS 13's App Router, DALLE AI Image Generation, Shadcn, Tailwind CSS, and OpenAI's API for Language Model usage. This project also leverages the efficiency of Object-Relational Mapping (ORMs) for database interactions.
+⚠️WIP⚠️
 
 ## Stack
 
-### 1.NextJS 13's App Router
+### 1.NextJS 13
 
-### 2. DALLE AI Image Generation
+### 2. Shadcn and Tailwind CSS
 
-### 3. Shadcn and Tailwind CSS
+### 3. OpenAI Dalle & API
 
-### 4. OpenAI's API
+### 4. Vercel Edge Runtime
 
-### 5. Object-Relational Mapping (ORMs)
+### 5. DrizzleORM
+
+### 6. NeonDB
+
+### 7. Firebase Storage
+
+### 8. TipTap WSIWYG Editor
+
+### 9. Vercel AI SDK
 
 ## Getting Started
 
