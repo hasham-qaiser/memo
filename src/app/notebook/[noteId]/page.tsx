@@ -1,6 +1,7 @@
 import DeleteButton from "@/components/DeleteButton";
 import TipTapEditor from "@/components/TipTapEditor";
 import { Button } from "@/components/ui/button";
+import { ChevronLeft } from "lucide-react";
 import { clerk } from "@/lib/clerk-server";
 import { db } from "@/lib/db";
 import { $notes } from "@/lib/db/schema";
@@ -38,7 +39,7 @@ const NotebookPage = async ({ params: { noteId } }: Props) => {
         <div className="border shadow-xl border-stone-200 rounded-lg p-4 flex items-center">
           <Link href="/dashboard">
             <Button className="bg-blue-500" size="sm">
-              Back
+              <ChevronLeft />
             </Button>
           </Link>
           <div className="w-3"></div>

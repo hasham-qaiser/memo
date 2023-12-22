@@ -3,7 +3,7 @@ import React from "react";
 import axios from "axios";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { DialogDescription, DialogTrigger } from "@radix-ui/react-dialog";
-import { Loader2, Plus } from "lucide-react";
+import { Loader2, PlusCircle } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { useMutation } from "@tanstack/react-query";
@@ -54,7 +54,7 @@ const CreateNoteDialog = (props: Props) => {
     <Dialog>
       <DialogTrigger>
         <div className="border-dashed border-2 flex border-blue-500 h-full rounded-lg items-center justify-center sm:flex-col hover:shadow-xl transition hover:-translate-y-1 flex-row p-4 ">
-          <Plus className="w-6 h-6 text-blue-500" strokeWidth={3} />
+          <PlusCircle className="w-6 h-6 text-blue-500" strokeWidth={3} />
           <h2 className="font-bold text-blue-500 sm:mt-2">New Note Book</h2>
         </div>
       </DialogTrigger>

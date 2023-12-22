@@ -5,7 +5,7 @@ import { db } from "@/lib/db";
 import { $notes } from "@/lib/db/schema";
 import { UserButton, auth } from "@clerk/nextjs";
 import { eq } from "drizzle-orm";
-import { ArrowLeft } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -28,7 +28,7 @@ const DashboardPage = async (props: Props) => {
             <div className="flex items-center">
               <Link href="/">
                 <Button className="bg-blue-500" size="sm">
-                  <ArrowLeft className="mr-1 w-4 h-4" />
+                  <ChevronLeft className="mr-1 w-4 h-4" />
                   Back
                 </Button>
               </Link>
