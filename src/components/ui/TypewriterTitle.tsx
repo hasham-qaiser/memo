@@ -16,6 +16,8 @@ const TypewriterTitle = (props: Props) => {
           .pauseFor(1000)
           .deleteAll()
           .typeString("AI-Powered Insights")
+          .pauseFor(1000)
+          .deleteAll()
           .start();
       }}
     />

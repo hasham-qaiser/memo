@@ -71,7 +71,7 @@ const TipTapEditor = ({ note }: Props) => {
         console.error(err);
       },
     });
-  }, [debouncedEditorState]);
+  }, [debouncedEditorState, saveNote]);
   return (
     <>
       <div className="flex">
