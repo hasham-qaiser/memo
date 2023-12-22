@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
+import { useState, useCallback } from "react";
 import axios from "axios";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { DialogDescription, DialogTrigger } from "@radix-ui/react-dialog";
-import { Loader2, PlusCircle } from "lucide-react";
+import { Loader2, PlusCircle, Pencil, MinusCircle } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { useMutation } from "@tanstack/react-query";
@@ -13,6 +14,7 @@ type Props = {};
 
 const CreateNoteDialog = (props: Props) => {
   const router = useRouter();
+
   const [input, setInput] = React.useState("");
   const uploadToFireBase = useMutation({
     mutationFn: async (noteId: string) => {
@@ -81,9 +83,11 @@ const CreateNoteDialog = (props: Props) => {
               {createNotebook.isPending && (
                 <Loader2 className="w-4 h-4 mr-2 animate-spin" />
               )}
+              <Pencil className="mr-1 w-4 h-4" />
               Create
             </Button>
-            <Button type="reset" variant={"secondary"}>
+            <Button type="reset" variant={"destructive"}>
+              <MinusCircle className="mr-1 w-4 h-4" />
               Cancel
             </Button>
           </div>
