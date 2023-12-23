@@ -86,7 +86,7 @@ const CreateNoteDialog = (props: Props) => {
               <Pencil className="mr-1 w-4 h-4" />
               Create
             </Button>
-            <Button type="reset" variant={"destructive"}>
+            <Button type="reset" variant={"secondary"}>
               <MinusCircle className="mr-1 w-4 h-4" />
               Cancel
             </Button>
