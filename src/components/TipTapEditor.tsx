@@ -81,7 +81,7 @@ const TipTapEditor = ({ note }: Props) => {
         </Button>
       </div>
 
-      <div className="prose prose-lg w-full mt-4">
+      <div className="prose prose-sm w-full mt-4">
         <EditorContent editor={editor} />
       </div>
       <div className="h-4"></div>
